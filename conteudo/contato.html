@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/mypage/style/fx.css">
+  <link rel="stylesheet" href="/mypage/style/index.css">
+  <link rel="stylesheet" href="/mypage/style/contato.css">
+  <title>My page</title>
+</head>
+
+<body class="gradiente">
+  <div class="banner"></div>
+
+  <!-- Nomes -->
+  <p class="nome">Aldair Neves</p>
+  <p class="descricao">Desenvolvedor de Software</p>
+
+  <!-- Todos conteudo na div -->
+  <div class="centro">
+
+    <input type="text" name="texto" id="texto" readonly placeholder="Digite alguma coisa"
+      value="contatoaldairneves@gmail.com" />
+    <button onclick="copiarTexto()">Copiar</button>
+    <a href="mailto:contatoaldairneves@gmail.com"> <button>Abrir app de e-mail</button></a>
+  </div>
+
+  <!-- divs dos efeitos da página -->
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+
+  <script>
+    function copiarTexto() {
+      let textoCopiado = document.getElementById("texto");
+      textoCopiado.select();
+      textoCopiado.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      alert("E-mail copiado: " + textoCopiado.value);
+    }
+
+  </script>
+</body>
+
+</html>
